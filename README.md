@@ -18,10 +18,10 @@ pip install -r requirements.txt
 
 ### How to start
 
-Run cmd, change to the program directory on the command line, then run main.py:
+Run cmd, change to the program directory on the command line, then start local server:
 ```
 cd <program_directory_on_your_local_disk>
-main.py
+python manage.py runserver 0.0.0.0:8000
 ```
 
 ### Project Goals
@@ -36,7 +36,7 @@ The code is written for educational purposes on online-course for web-developers
 
 # Работа с Django ORM - Получение объектов модели
 
-Этот учебный проект демонстрирует работу с HTML и шаблонами Jinja2:
+Этот учебный проект демонстрирует получение объектов модели из базы данных.
 * подключение к базе данных,
 * отправку запросов,
 * вывод данных на сайте.
@@ -54,10 +54,10 @@ pip install -r requirements.txt
 
 ### Как запустить
 
-Запустите cmd, в командной строке перейдите в каталог программы, затем запустите main.py:
+Запустите cmd, в командной строке перейдите в каталог программы, затем запустите локальный сервер:
 ```
 cd <каталог_программы_на_вашем_локальном_диске>
-main.py
+python manage.py runserver 0.0.0.0:8000
 ```
 
 ### Цель проекта
