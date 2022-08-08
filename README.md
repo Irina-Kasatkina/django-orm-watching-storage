@@ -1,9 +1,8 @@
-# Working with Django ORM - Getting Model Objects
+# Bank security datacenter
 
-This tutorial project demonstrates getting model objects from a database:
-* database connection,
-* sending requests,
-* data output on the site.
+This is an internal repository for Siyanie bank employees. If you got into this repository by accident, then you will not be able to run it, because. you do not have access to the database, but you can freely use the web layout code or see how the database queries are implemented.
+
+The security console is a website that can be connected to a remote database with visits and pass cards of our bank employees.
 
 ### How to install
 
@@ -23,6 +22,8 @@ Run cmd, change to the program directory on the command line, then start local s
 cd <program_directory_on_your_local_disk>
 python manage.py runserver 0.0.0.0:8000
 ```
+The website will only work if you have access to the database.
+The main page of the site can be found at http://127.0.0.1:8000/
 
 ### Project Goals
 
@@ -34,12 +35,11 @@ The code is written for educational purposes on online-course for web-developers
 
 
 
-# Работа с Django ORM - Получение объектов модели
+# Пульт охраны банка
 
-Этот учебный проект демонстрирует получение объектов модели из базы данных.
-* подключение к базе данных,
-* отправку запросов,
-* вывод данных на сайте.
+Это внутренний репозиторий для сотрудников банка "Сияние". Если вы попали в этот репозиторий случайно, то вы не сможете его запустить, т.к. у вас нет доступа к БД, но можете свободно использовать код вёрстки или посмотреть, как реализованы запросы к БД.
+
+Пульт охраны - это сайт, который можно подключить к удалённой базе данных с визитами и карточками пропуска сотрудников нашего банка.
 
 ### Как установить
 
@@ -59,6 +59,8 @@ pip install -r requirements.txt
 cd <каталог_программы_на_вашем_локальном_диске>
 python manage.py runserver 0.0.0.0:8000
 ```
+Сайт будет работать, только если у вас есть доступ к БД.
+Главную страницу сайта можно будет найти по адресу http://127.0.0.1:8000/
 
 ### Цель проекта
 
