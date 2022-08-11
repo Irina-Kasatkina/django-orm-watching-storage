@@ -19,49 +19,31 @@ pip install -r requirements.txt
 
 Run cmd, change to the program directory on the command line, then start local server:
 ```
-cd <program_directory_on_your_local_disk>
+cd {program_directory_on_your_local_disk}
 python manage.py runserver 0.0.0.0:8000
 ```
 The website will only work if you have access to the database.
 The main page of the site can be found at http://127.0.0.1:8000/
 
+### Project data
+
+To run a project with your own data, you need to add a `project/.env` file to access the database like this:
+```
+#
+DATABASE_URL=postgres://{user}:{password}@{hostname}:{port}/{database-name}
+SECRET_KEY={secret_key}
+ALLOWED_HOSTS={allowed_hosts}
+DEBUG={debug_mode}
+```
+For example:
+```
+#
+DATABASE_URL=postgres://username:password@localhost:5432/marketing
+SECRET_KEY=replace_me
+ALLOWED_HOSTS=example.com,awesomedomain.com,10.0.0.2
+DEBUG=True
+```
+
 ### Project Goals
 
 The code is written for educational purposes in the process of learning on the online course on Django ORM for Python developers.
-
-### Project Goals
-
-The code is written for educational purposes on online-course for web-developers [dvmn.org](https://dvmn.org/).
-
-
-
-# Пульт охраны банка
-
-Это внутренний репозиторий для сотрудников банка "Сияние". Если вы попали в этот репозиторий случайно, то вы не сможете его запустить, т.к. у вас нет доступа к БД, но можете свободно использовать код вёрстки или посмотреть, как реализованы запросы к БД.
-
-Пульт охраны - это сайт, который можно подключить к удалённой базе данных с визитами и карточками пропуска сотрудников нашего банка.
-
-### Как установить
-
-Для установки проекта скопируйте его на свой локальный диск.
-
-У вас уже должен быть установлен Python3.<br>
-Лучше работать в виртуальном окружении, чтобы избежать конфликта с установленной у вас версией Django.<br>
-Затем используйте `pip` (или `pip3`, есть конфликт с Python2) для установки зависимостей:
-```
-pip install -r requirements.txt
-```
-
-### Как запустить
-
-Запустите cmd, в командной строке перейдите в каталог программы, затем запустите локальный сервер:
-```
-cd <каталог_программы_на_вашем_локальном_диске>
-python manage.py runserver 0.0.0.0:8000
-```
-Сайт будет работать, только если у вас есть доступ к БД.
-Главную страницу сайта можно будет найти по адресу http://127.0.0.1:8000/
-
-### Цель проекта
-
-Код написан в учебных целях в процессе обучения на онлайн-курсе по Django ORM для Python-разработчиков.
